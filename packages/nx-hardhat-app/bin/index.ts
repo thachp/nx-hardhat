@@ -18,7 +18,7 @@ async function main() {
   const { directory } = await createWorkspace(`nx-hardhat@${presetVersion}`, {
     name,
     nxCloud: 'skip',
-    packageManager: 'npm',
+    packageManager: 'pnpm',
   });
 
   console.log(`Successfully created the workspace: ${directory}.`);

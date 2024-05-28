@@ -11,11 +11,11 @@ export async function presetGenerator(
   tree: Tree,
   options: PresetGeneratorSchema
 ) {
-  const projectRoot = `libs/${options.name}`;
+  const projectRoot = `.`;
   addProjectConfiguration(tree, options.name, {
     root: projectRoot,
-    projectType: 'library',
-    sourceRoot: `${projectRoot}/src`,
+    projectType: 'application',
+    sourceRoot: `${projectRoot}/blockchain`,
     targets: {},
   });
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
