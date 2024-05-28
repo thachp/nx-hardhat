@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "jest",
+    "commitlint": "commitlint --edit"
   },
   "private": true,
+  "type": "module",
   "dependencies": {
     "@nx/devkit": "19.1.0",
     "create-nx-workspace": "19.1.0",
